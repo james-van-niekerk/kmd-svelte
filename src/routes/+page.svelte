@@ -8,12 +8,18 @@
 
     // Event emitted from the PhaserGame component
     const currentScene = (scene: Scene) => {};
+
+    const switchScene = (newSceneKey: string) => {
+        if (phaserRef.game) {
+            phaserRef.game.scene.start(newSceneKey);
+        }
+    };
 </script>
 
 <div id="app">
     <PhaserGame bind:phaserRef currentActiveScene={currentScene} />
     <div>
-        <ConsoleButton onClick={() => console.log("Hello")}>Test</ConsoleButton>
+        <ConsoleButton onClick={() => switchScene("Game2")}>Test</ConsoleButton>
     </div>
 </div>
 

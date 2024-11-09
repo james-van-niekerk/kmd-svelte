@@ -1,4 +1,5 @@
 import { Boot } from "./scenes/Boot";
+// TODO @James insert main menu here to render
 import { Game as MainGame } from "./scenes/Game";
 import { AUTO, Game } from "phaser";
 import { Preloader } from "./scenes/Preloader";

@@ -1,25 +1,25 @@
 import { EventBus } from "../EventBus";
 import { Scene } from "phaser";
 
-export class Game extends Scene {
+export class MainMenu extends Scene {
   camera: Phaser.Cameras.Scene2D.Camera;
   background: Phaser.GameObjects.Image;
   gameText: Phaser.GameObjects.Text;
 
   constructor() {
-    super("Game");
+    super("MainMenu");
   }
 
   create() {
     this.camera = this.cameras.main;
 
-    this.add.image(510, 380, "sky");
-    // this.add.image(400, 300, "star");
+    // this.add.image(510, 380, "sky");
+    this.add.image(400, 300, "star");
 
     EventBus.emit("current-scene-ready", this);
   }
 
   changeScene() {
-    this.scene.start("MainMenu");
+    this.scene.start("Game");
   }
 }
