@@ -32,4 +32,13 @@
     });
 </script>
 
-<div id="game-container"></div>
+<div style="font-family:Crang" id="game-container"></div>
+
+<style>
+    @font-face {
+        font-family: Crang;
+        src: url("fonts/Crang.ttf");
+        font-weight: 400;
+        font-weight: normal;
+    }
+</style>

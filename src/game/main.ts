@@ -1,5 +1,5 @@
 import { Boot } from "./scenes/Boot";
-// TODO @James insert main menu here to render
+import { MainMenu } from "./scenes/MainMenu";
 import { Game as MainGame } from "./scenes/Game";
 import { AUTO, Game } from "phaser";
 import { Preloader } from "./scenes/Preloader";
@@ -12,7 +12,7 @@ const config: Phaser.Types.Core.GameConfig = {
   height: 768,
   parent: "game-container",
   backgroundColor: "#028af8",
-  scene: [Boot, Preloader, MainGame],
+  scene: [Boot, Preloader, MainGame, MainMenu],
 };
 
 const StartGame = (parent: string) => {

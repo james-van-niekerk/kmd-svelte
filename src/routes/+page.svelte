@@ -18,9 +18,6 @@
 
 <div id="app">
     <PhaserGame bind:phaserRef currentActiveScene={currentScene} />
-    <div>
-        <ConsoleButton onClick={() => switchScene("Game2")}>Test</ConsoleButton>
-    </div>
 </div>
 
 <style>

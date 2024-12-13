@@ -6,7 +6,7 @@
     export let mainBgColor: string = "rgba(46, 213, 116, 0.36)";
     export let patternColor: string = "rgba(46, 213, 116, 0.073)";
     export let hueRotate: number = 0;
-    export let hoverHueRotate: number = 250;
+    export const hoverHueRotate: number = 250;
 </script>
 
 <button
